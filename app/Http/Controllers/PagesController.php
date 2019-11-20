@@ -8,7 +8,8 @@ class PagesController extends Controller
 {
     // index page 
     public function index(){
-        return view('pages.index');
+        $title = 'Welcome To Laravel';
+        return view('pages.index', compact('title'));
     }
 
     // about page
