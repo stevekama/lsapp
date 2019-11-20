@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,14 +12,6 @@
 
 Route::get('/', 'PagesController@index');
 
-Route::get('/hello', function (){
-    return "Hello world";
-});
+Route::get('/about', 'PagesController@about');
 
-Route::get('/about', function (){
-    return view('pages.about');
-});
-
-Route::get('/user/{id}', function ($id){
-    return "This user is: ".$id;
-});
+Route::get('/services', 'PagesController@services');

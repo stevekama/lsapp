@@ -10,5 +10,15 @@ class PagesController extends Controller
     public function index(){
         return view('pages.index');
     }
+
+    // about page
+    public function about(){
+        return view('pages.about');
+    }
+
+    // about page
+    public function services(){
+        return view('pages.services');
+    }
     
 }
