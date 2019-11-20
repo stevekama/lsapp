@@ -14,7 +14,8 @@ class PagesController extends Controller
 
     // about page
     public function about(){
-        return view('pages.about');
+        $title = "Welcome to About Page";
+        return view('pages.about')->with('title', $title);
     }
 
     // about page
